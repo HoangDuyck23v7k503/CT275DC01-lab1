@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biểu mẫu đăng nhập</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="all.min.css">
+</head>
+<body class="bg-light">
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+  <div class="card shadow-sm" style="max-width: 400px; width: 100%;">
+    <div class="card-header bg-info text-blue ">
+      <h5 class="mb-0"><i class="fas fa-sign-in-alt me-2"></i>Biểu mẫu đăng nhập</h5>
+    </div>
+    <div class="card-body">
+      <form>
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email" class="form-label">
+            <i class="fas fa-envelope me-2"></i>Email:
+          </label>
+          <input type="email" class="form-control" id="email" placeholder="Nhập vào email">
+        </div>
+
+        <!-- Mật khẩu -->
+        <div class="mb-3">
+          <label for="password" class="form-label">
+            <i class="fas fa-lock me-2"></i>Mật khẩu:
+          </label>
+          <input type="password" class="form-control" id="password" placeholder="Nhập vào mật khẩu">
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="remember">
+          <label class="form-check-label" for="remember">
+            <i class="fas fa-user-check me-2"></i>Ghi nhớ tôi
+          </label>
+        </div>
+
+        <!-- Nút đăng nhập -->
+        <button type="submit" class="btn btn-primary w-100">
+          <i class="fas fa-sign-in-alt me-2"></i>Đăng nhập
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
