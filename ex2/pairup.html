@@ -18,16 +18,16 @@
     <button
       class="navbar-toggler"
       type="button"
-      dat-bs-toggle="collapes"
+      data-bs-toggle="collapse"
       data-bs-target="#primaryNav"
       aria-controls="primaryNav"
-      aria-expanded="fale"
+      aria-expanded="false"
       aria-label="Toggle navigation"
       >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapes navbar-toggler" id="primaryNav">
-        <div class="navabar-nav ms-auto">
+    <div class="collapse navbar-collapse" id="primaryNav">
+        <div class="navbar-nav ms-auto">
           <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
           <a class="nav-link" href="#">Thông tin</a>
           <a class="nav-link" href="#">Liên hệ</a>
@@ -35,89 +35,111 @@
         <a class="btn btn-primary ms-lg-3 mt-3 mt-lg-0" href="#">Tham gia</a>
     </div>
     </nav>
-    <main>
-      <section>
-        <p>Xin chào!</p>
-        <h1>Tìm bạn đồng hành để học tốt hơn</h1>
-        <p>
+    <main class="container py-5">
+      <section class="bg-primary text-white rounded-4 p-4 p-lg-5 mb-5">
+        <div class="d-flex flex-column align-items-start g-4">
+          <p class="text-uppercase fw-semibold small mb-2">Xin chào!</p>
+        <h1 class="display-5 fw-bold mb-3">
+          Tìm bạn đồng hành để học tốt hơn
+        </h1>
+        <p class="lead mb-4">
           Hãy lựa chọn một trong các chủ đề phù hợp với trình độ của bạn, sau đó
           bắt cặp với một người bạn để cùng nhau khám phá, thử nghiệm và chia sẻ
           kiến thức.
         </p>
+        </div>
       </section>
 
-      <section>
-        <p>Lộ trình học</p>
-        <h2>Chọn mức độ phù hợp</h2>
-        <p>
+      <section class="mb-5">
+        <div class="text-center mb-5">
+          <p class="text-uppercase fw-semibold text-primary mb-2"
+          >Lộ trình học
+          </p>
+          <h2 class="fw-bold">Chọn mức độ phù hợp</h2>
+          <p class="text-muted mb-0">
           Mỗi cấp độ bao gồm các chủ đề trọng tâm, giúp bạn tiến bộ vững chắc.
-        </p>
+          </p>
+        </div>
+       
 
-        <div>
-          <p>Cấp độ 1</p>
-          <p>HTML/CSS</p>
-          <p>Nền tảng Web</p>
-          <p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <article class="card h-100 border-0 shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <div
+                class="d-flex align-items-center justify-content-between mb-3"
+                >
+                  <span class="badge rounded-pill text-bg-secondary">Cấp độ 1</span>
+                  <small class="text-muted">HTML/CSS</small>
+                </div>
+          <h5 class="card-title">Nền tảng Web</h5>
+          <p class="card-text text-muted flex-grow-1">
             Hiểu cấu trúc trang web, cách định dạng và trình bày nội dung cơ
             bản.
           </p>
-          <ul>
+          <ul class="list-unstyled small text-muted mb-4">
             <li>Basic HTML tags</li>
             <li>CSS properties</li>
             <li>Selectors</li>
           </ul>
-          <a href="#">Khám phá</a>
-        </div>
+          <a class="btn btn-outline-primary w-100" href="#">Khám phá</a>
+          </div>
+              </article>
+          </div>
 
-        <div>
-          <p>Cấp độ 2</p>
-          <p>JS cơ bản</p>
-          <p>Tư duy lập trình</p>
-          <p>
-            Làm quen với các khái niệm cốt lõi để xử lý dữ liệu và điều khiển
-            luồng.
+          <div class="col-md-6 col-lg-3">
+            <article class="card h-100 border-0 shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <div
+                class="d-flex align-items-center justify-content-between mb-3"
+                >
+                  <span class="badge rounded-pill text-bg-secondary">Cấp độ 1</span>
+                  <small class="text-muted">HTML/CSS</small>
+                </div>
+          <h5 class="card-title">Nền tảng Web</h5>
+          <p class="card-text text-muted flex-grow-1">
+            Hiểu cấu trúc trang web, cách định dạng và trình bày nội dung cơ
+            bản.
           </p>
-          <ul>
-            <li>Biến & kiểu dữ liệu</li>
-            <li>Mảng & hàm</li>
-            <li>Vòng lặp & điều kiện</li>
+          <ul class="list-unstyled small text-muted mb-4">
+            <li>Basic HTML tags</li>
+            <li>CSS properties</li>
+            <li>Selectors</li>
           </ul>
-          <a href="#">Khám phá</a>
+          <a class="btn btn-outline-primary w-100" href="#">Khám phá</a>
         </div>
+              </article>
+      </div>
 
-        <div>
-          <p>Cấp độ 3</p>
-          <p>JS cho Web</p>
-          <p>Tương tác người dùng</p>
-          <p>Kết hợp HTML/CSS với DOM để tạo nên trải nghiệm web sinh động.</p>
-          <ul>
-            <li>Truy cập DOM</li>
-            <li>Sự kiện trình duyệt</li>
-            <li>Thao tác giao diện</li>
-          </ul>
-          <a href="#">Khám phá</a>
-        </div>
-
-        <div>
-          <p>Cấp độ 4</p>
-          <p>JS nâng cao</p>
-          <p>Xây dựng ứng dụng</p>
-          <p>
-            Khai thác dữ liệu động để tạo ra các ứng dụng web hoàn chỉnh và hiện
-            đại.
+          <div class="col-md-6 col-lg-3">
+            <article class="card h-100 border-0 shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <div
+                class="d-flex align-items-center justify-content-between mb-3"
+                >
+                  <span class="badge rounded-pill text-bg-secondary">Cấp độ 1</span>
+                  <small class="text-muted">HTML/CSS</small>
+                </div>
+          <h5 class="card-title">Nền tảng Web</h5>
+          <p class="card-text text-muted flex-grow-1">
+            Hiểu cấu trúc trang web, cách định dạng và trình bày nội dung cơ
+            bản.
           </p>
-          <ul>
-            <li>DOM nâng cao</li>
-            <li>jQuery</li>
-            <li>AJAX & JSON</li>
+          <ul class="list-unstyled small text-muted mb-4">
+            <li>Basic HTML tags</li>
+            <li>CSS properties</li>
+            <li>Selectors</li>
           </ul>
-          <a href="#">Khám phá</a>
+          <a class="btn btn-outline-primary w-100" href="#">Khám phá</a>
         </div>
+              </article>
+              
       </section>
     </main>
 
-    <footer>
-      <p>Cùng nhau học hỏi &copy; 2025</p>
+    <footer class="py-4 bg-dark text-white-50">
+      <p class="text-center small mb-0">
+        Cùng nhau học hỏi &copy; 2025 Thiết kế bằng Bootstrap 5</p>
     </footer>
   </body>
 </html>
