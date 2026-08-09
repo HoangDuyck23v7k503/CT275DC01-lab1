@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hộp thoại đăng nhập</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="all.min.css">
+</head>
+<body class="bg-light">
+
+<div class="container my-5 text-center">
+  <!-- Nút mở hộp thoại -->
+  <button type="button" class="btn btn-info fw-bold" data-bs-toggle="modal" data-bs-target="#loginModal">
+    <i class="fas fa-door-open me-2"></i>Mở hộp thoại đăng nhập tại đây
+  </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Header -->
+      <div class="modal-header bg-info text-primary">
+        <h5 class="modal-title fw-bold" id="loginModalLabel">
+          <i class="fas fa-user-lock me-2"></i>Biểu mẫu đăng nhập
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body">
+        <form>
+          <!-- Người dùng -->
+          <div class="mb-3">
+            <label for="username" class="form-label fw-bold">
+              <i class="fas fa-user me-2 text-primary"></i>Người dùng:
+            </label>
+            <input type="text" class="form-control" id="username" placeholder="Nhập tên người dùng">
+          </div>
+
+          <!-- Mật khẩu -->
+          <div class="mb-3">
+            <label for="password" class="form-label fw-bold">
+              <i class="fas fa-lock me-2 text-secondary"></i>Mật khẩu:
+            </label>
+            <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu">
+          </div>
+
+          <!-- Checkbox -->
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="remember">
+            <label class="form-check-label fw-bold" for="remember">
+              <i class="fas fa-user-check me-2 text-success"></i>Ghi nhớ tôi
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer d-flex justify-content-between">
+        <div>
+          <button type="button" class="btn btn-primary fw-bold">
+            <i class="fas fa-sign-in-alt me-2"></i>Đăng nhập
+          </button>
+          <button type="button" class="btn btn-secondary fw-bold" data-bs-dismiss="modal">
+            <i class="fas fa-times me-2"></i>Hủy bỏ
+          </button>
+        </div>
+        <div class="text-end small">
+          <i class="fas fa-user-plus me-1 text-info"></i>Bạn chưa phải là thành viên? <a href="#">Đăng ký</a><br>
+          <i class="fas fa-key me-1 text-warning"></i><a href="#">Quên mật khẩu?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
